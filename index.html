@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog API Frontend</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Blog Posts</h1>
+    <ul id="blogList"></ul>
+
+    <h2>Create New Post</h2>
+    <form id="createForm">
+        <label>Title: <input type="text" id="createTitle"></label><br>
+        <label>Content: <textarea id="createContent"></textarea></label><br>
+        <label>Author: <input type="text" id="createAuthor"></label><br>
+        <button type="submit">Create Post</button>
+    </form>
+
+    <h2>Edit Post</h2>
+    <form id="editForm" style="display: none;">
+        <input type="hidden" id="editPostId">
+        <label>Title: <input type="text" id="editTitle"></label><br>
+        <label>Content: <textarea id="editContent"></textarea></label><br>
+        <label>Author: <input type="text" id="editAuthor"></label><br>
+        <button type="submit">Save Changes</button>
+    </form>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
